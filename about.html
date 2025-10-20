@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayozuriredessociais</title>
+<style>
+    
+:root {
+  --azul: #3b82f6;
+  --preto: #0a0a0a;
+  --brilho: #60a5fa;
+}
+
+/* Reset e base */
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family: 'Poppins', sans-serif; background: radial-gradient(circle at top left, #001020, #000); color:#fff; min-height:100vh; display:flex; justify-content:center; align-items:center; overflow-x:hidden; }
+
+/* Animação de fundo */
+@keyframes fundoAnimado {
+  0% { background: radial-gradient(circle at 10% 10%, #001020, #000); }
+  50% { background: radial-gradient(circle at 90% 70%, #002040, #000); }
+  100% { background: radial-gradient(circle at 10% 10%, #001020, #000); }
+}
+body { animation: fundoAnimado 12s ease-in-out infinite; }
+
+/* Container */
+.container {
+  text-align:center;
+  padding:40px 20px;
+  max-width:500px;
+  background: rgba(0,0,0,0.6);
+  border-radius:20px;
+  box-shadow: 0 0 30px rgba(96,165,250,0.5);
+  animation: aparecer 1s ease forwards;
+}
+
+/* Foto */
+.foto {
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  margin:0 auto 20px;
+  border:3px solid var(--azul);
+  overflow:hidden;
+  box-shadow:0 0 20px var(--brilho);
+  animation: flutuar 3s ease-in-out infinite;
+}
+.foto img { width:100%; height:100%; object-fit:cover; }
+
+@keyframes flutuar {
+  0%,100% { transform:translateY(0); }
+  50% { transform:translateY(-10px); }
+}
+
+/* Texto */
+h1 { font-size:2.2em; color: var(--azul); margin-bottom:10px; animation: aparecer 1s ease forwards; }
+p { color:#ccc; margin-bottom:25px; font-size:1em; animation: aparecer 1.5s ease forwards; }
+
+/* Botões / Links */
+.links { display:flex; flex-direction:column; gap:15px; align-items:center; }
+.link {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  color:#000;
+  padding:12px 25px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:600;
+  width:80%;
+  max-width:300px;
+  box-shadow:0 0 10px rgba(96,165,250,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+.link:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow:0 0 25px rgba(96,165,250,0.8);
+  filter: brightness(1.2);
+}
+
+/* Animação geral */
+@keyframes aparecer {
+  from { opacity:0; transform:translateY(20px); }
+  to { opacity:1; transform:translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="foto">
+    <img src="https://cdn.discordapp.com/attachments/922656906743541792/1429491554774683821/IMG_20251013_154259_034.webp?ex=68f65541&is=68f503c1&hm=c2f424039ba427fdb1e72dc30ee33d4c2474637d08703c0c80c5a1da073b1a6a&" alt="Sua foto">
+  </div>
+  <h1>Bem vindo(a)</h1>
+  <p>Sou Ayozuri, mas pode me chamar de ayoz, ayo ou raited e gosto de programação.<br></p>
+
+  <div class="links">
+    <a href="https://www.instagram.com/ayozuriii?igsh=aHFjemN4aGNhaGdo" class="link" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@ayozuri?_t=ZM-90gORQ6oa4p&_r=1" class="link" target="_blank">TikTok</a>
+    <a href="https://discord.gg/CB6mrUPe" class="link" target="_blank">Discord</a>
+    <a 
+  </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de GIF</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Fundo preto pra dar contraste */
+        }
+        img {
+            width: 300px; /* você pode ajustar o tamanho */
+            height: auto;
+            border: 2px solid #00f; /* borda azul só pra style */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+   <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 10px;
+            color: #ff0000; /* cor da palavra Coca */
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+   
+
+    <script>
+        // Cria várias estrelas
+        for(let i=0; i<100; i++){
+            let star = document.createElement('div');
+            star.className = 'star';
+            star.style.top = Math.random() * window.innerHeight + 'px';
+            star.style.left = Math.random() * window.innerWidth + 'px';
+            star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            document.body.appendChild(star);
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Link com Efeito</title>
+  <style>
+    a.botao-servicos {
+      display: inline-block;
+      padding: 12px 25px;
+      background: orange;
+      color: blue;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Efeito quando passa o mouse */
+    a.botao-servicos:hover {
+      transform: scale(1.05);
+    }
+
+    /* Efeito quando clica */
+    a.botao-servicos:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="services.html" class="botao-servicos">mais infos</a>
+

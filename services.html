@@ -1,0 +1,314 @@
+</footer>
+
+</body>
+</html>
+
+
+   <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mais - Ayozuri</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #blue;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(90deg, #black, #orange);
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: orange;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #black;
+    }
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .service-card {
+      background: #black;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    .service-card h2 {
+      margin-bottom: 1rem;
+      color: #orange;
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #orange;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      font-size: 0.8rem;
+      color: #orange;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>mais sobre mim</h1>
+  <nav>
+    <a href="about.html">links</a>
+  
+  <div class="troca-texto">
+  quem ta lendo é <span id="mudar"></span>
+</div>
+
+<script>
+  const palavras = ["gay",
+ "gay demais",
+ "muito gay", "bastante gay",];
+  let i = 0;
+  setInterval(() => {
+    document.getElementById("mudar").textContent = palavras[i];
+    i = (i + 1) % palavras.length;
+  }, 1500);
+</script>
+
+<style>
+  .troca-texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    animation: fade 1.5s infinite;
+  }
+  @keyframes fade {
+    0%,100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+</style>
+   
+  </nav>
+</header>
+
+<section>
+  
+</f
+</body>
+</html>
+<style>
+  .estrelas {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .estrela {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    animation: subir 5s linear infinite;
+    opacity: 0.7;
+  }
+
+  @keyframes subir {
+    from { transform: translateY(100px); }
+    to { transform: translateY(-200px); }
+  }
+</style>
+
+<div class="estrelas">
+  <script>
+    for (let i=0; i<25; i++) {
+      let estrela = document.createElement("div");
+      estrela.className = "estrela";
+      estrela.style.left = Math.random() * 100 + "%";
+      estrela.style.animationDuration = (3 + Math.random() * 3) + "s";
+      document.querySelector(".estrelas").appendChild(estrela);
+    }
+  </script>
+</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards - Ayozuri</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #1a73e8;
+      margin-bottom: 2rem;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1c1c1c;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      color: #1a73e8;
+      margin: 0.5rem 0;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Meus Cards</h1>
+
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUydXZvMnpzZTZvbWxxcGlpaWliNDZ3dW40Ymc4OGtocWYwMDNhc3ZnMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/31ZmR3JNJZQSjAvECs/giphy.gif" alt="Hora de Aventura">
+      <h2>🦇 🍬</h2>
+      <p>Sou super fã da série e amo colecionar gifs e cenas animadas.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3YxYjA0d2o0NHR2YXRhbWh5cjVrcjJiamNjMno3Ym1haTlxNXpmYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEjHMeHSuMCXfwmn6/giphy.gif" alt="Alex Turner">
+      <h2>🎶</h2>
+      <p>Música é vida! Arctic Monkeys é minha vibe total.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUycHBkMWdkdG9pc3Iyb3ppNXJ2c2wyeXJiMnF3eDhsMm5reWEzcjZrMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5c0lnAhwQMs4s49fMq/giphy.gif" alt="Pinguins">
+      <h2>🐧</h2>
+      <p>Adoro gifs fofos e coisas divertidas como esses pinguins.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyejFoeGRmcmpxbmhjaDM5bXdkcHJkbTFzaWxnOW01YmZkYmdycjNpZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x3TGbdF6Z8tsQ/giphy.gif" alt="Interesses">
+      <h2>🤓</h2>
+      <p>Filmes, séries, comunidade LGBT+, games leves e criatividade sem limites.</p>
+    </div>
+  </div>
+
+  <footer>
+    Feito por Ayozuri &copy; 2025
+  </footer>
+
+</body>
+</html>
+  </body>
+</html>
+</a>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .typing {
+      display: inline-block;
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid orange;
+      width: 0;
+      animation: typing 4s steps(30) forwards, blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 200px; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+
+  <footer>
+    <span class="typing">ayo = felicidade | zuri = linda</span>
+  </footer>
+
+</body>
+</html>  

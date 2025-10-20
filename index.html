@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Botão com Efeito de Raio</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #000000, #001b33);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .botao-raio {
+      position: relative;
+      padding: 15px 40px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background: #ff7b00; /* laranja */
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      box-shadow: 0 0 15px rgba(255, 123, 0, 0.8);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .botao-raio:hover {
+      transform: scale(1.08);
+    }
+
+    /* Efeito de raio ao redor */
+    .botao-raio::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: calc(100% + 6px);
+      height: calc(100% + 6px);
+      border-radius: 12px;
+      background: url('https://i.imgur.com/4NJlT9r.gif'); /* gif de raio azul */
+      background-size: cover;
+      opacity: 0;
+      transition: 0.3s;
+      z-index: -1;
+      filter: brightness(1.5);
+    }
+
+    .botao-raio:hover::before {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="about.html" class="botao-raio">links e bio</a>
+
+</body>
+</html>
